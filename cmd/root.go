@@ -34,6 +34,10 @@ func Execute() {
 
 func init() {
 	cobra.OnInitialize(initConfig)
+	if os.Geteuid() != 0 {
+		fmt.Println("Please run as a root user or with sudo permission")
+		os.Exit(1)
+	}
 }
 
 func initConfig() {
@@ -43,6 +47,6 @@ func initConfig() {
 		os.Exit(1)
 	}
 	storage = storageRes
-
 	wg = wireguard.NewWireGuardManager(platform.GetConfigDirectory(), platform.GetDefaultInterfaceName())
+
 }

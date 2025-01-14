@@ -88,7 +88,7 @@ func (wg *WireGuardManager) generateConfig(clientConfig models.WGClientConfig) e
 		return fmt.Errorf("failed to write config file: %w", err)
 	}
 
-	fmt.Println("Config Created")
+	fmt.Println("New Config Created")
 
 	return nil
 }

@@ -36,7 +36,6 @@ var loginCmd = &cobra.Command{
 func loginExecute(cmd *cobra.Command, args []string) {
 	log := logger.Default()
 	baseUrl, _ := storage.GetBaseUrl()
-
 	isValidUrl := auth.IsURL(baseUrl)
 	if !isValidUrl {
 		log.Error("Please make sure the url is in format : http[s]://<domain/subdomain> \n Example : https://qryptic.leetsecure.com")
