@@ -8,7 +8,7 @@ The **Qryptic CLI** is a command-line tool for users to securely connect to Qryp
 - Cross-platform compatibility (Windows, macOS, Linux).
 
 ## Documentation
-For detailed usage instructions, visit the [Qryptic CLI Documentation](https://docs.qryptic.com/).
+For detailed usage instructions, visit the [Qryptic CLI Documentation](https://docs.qryptic.app/).
 
 ## License
 Qryptic is licensed under the [AGPL v3.0 License](./LICENSE).
